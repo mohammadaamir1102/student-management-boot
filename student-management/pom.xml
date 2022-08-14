@@ -39,6 +39,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>net.sf.dozer</groupId>
+			<artifactId>dozer</artifactId>
+			<version>5.5.1</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
@@ -66,5 +72,9 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	
+	
+	
 
 </project>

@@ -1,8 +1,8 @@
 package com.management.entity;
 
 import java.sql.Timestamp;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,7 +23,7 @@ public class StudentManagement {
 	private String studentPhoneNumber;
 	private String studentGender;
 	@JsonFormat(pattern = "dd-MM-yyyy")
-	private LocalDate studentDOB;
+	private Date studentDOB;
 	private Double studentSalary;
 	private String studentCityName;
 	private Boolean isActive;
@@ -42,7 +42,7 @@ public class StudentManagement {
 	}
 
 	private StudentManagement(Long studentId, String studentFirstName, String studentLastName,
-			String studentPhoneNumber, String studentGender, LocalDate studentDOB, Double studentSalary,
+			String studentPhoneNumber, String studentGender, Date studentDOB, Double studentSalary,
 			String studentCityName, Boolean isActive, String studentPinCode, String studentSatate,
 			String studentDistrict, String studentCollegeName, String studentCourse, Timestamp createdOn,
 			Timestamp updatedOn) {
@@ -105,11 +105,11 @@ public class StudentManagement {
 		this.studentGender = studentGender;
 	}
 
-	public LocalDate getStudentDOB() {
+	public Date getStudentDOB() {
 		return studentDOB;
 	}
 
-	public void setStudentDOB(LocalDate studentDOB) {
+	public void setStudentDOB(Date studentDOB) {
 		this.studentDOB = studentDOB;
 	}
 
